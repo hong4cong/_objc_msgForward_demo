@@ -21,17 +21,17 @@
     self = [super init];
     if (self) {
         _target = [ForwardingTarget new];
-        [self performSelector:@selector(sel) withObject:nil];
-        
+        [self performSelector:@selector(sel:) withObject:@"yeyu"];
     }
     
     return self;
 }
 
 
-id dynamicMethodIMP(id self, SEL _cmd)
+id dynamicMethodIMP(id self, SEL _cmd, NSString *str)
 {
     NSLog(@"%s:动态添加的方法",__FUNCTION__);
+    NSLog(@"%@", str);
     return @"1";
 }
 
@@ -61,6 +61,7 @@ id dynamicMethodIMP(id self, SEL _cmd)
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
     //    [super forwardInvocation:anInvocation];
+    anInvocation.selector = @selector(invocationTest);
     [self.target forwardInvocation:anInvocation];
 }
 

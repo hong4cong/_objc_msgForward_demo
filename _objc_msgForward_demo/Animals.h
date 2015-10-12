@@ -1,5 +1,5 @@
 //
-//  Monkey.h
+//  Animals.h
 //  _objc_msgForward_demo
 //
 //  Created by luguobin on 15/9/21.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Animals.h"
 
-@interface Monkey : Animals
+@interface Animals : NSObject
+
+//- (void)sel;
 
 @end

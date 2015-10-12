@@ -16,6 +16,7 @@
 		D632A4B81BCB734C001353B2 /* _objc_msgForward_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D632A4B71BCB734C001353B2 /* _objc_msgForward_demoTests.m */; };
 		D632A4C31BCB736D001353B2 /* ForwardingTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = D632A4C21BCB736D001353B2 /* ForwardingTarget.m */; };
 		D632A4C61BCB7378001353B2 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = D632A4C51BCB7378001353B2 /* Monkey.m */; };
+		D632A4C91BCB7A0D001353B2 /* Animals.m in Sources */ = {isa = PBXBuildFile; fileRef = D632A4C81BCB7A0D001353B2 /* Animals.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		D632A4C21BCB736D001353B2 /* ForwardingTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardingTarget.m; sourceTree = "<group>"; };
 		D632A4C41BCB7378001353B2 /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		D632A4C51BCB7378001353B2 /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
+		D632A4C71BCB7A0D001353B2 /* Animals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animals.h; sourceTree = "<group>"; };
+		D632A4C81BCB7A0D001353B2 /* Animals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animals.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 		D632A49A1BCB734C001353B2 /* _objc_msgForward_demo */ = {
 			isa = PBXGroup;
 			children = (
+				D632A4C71BCB7A0D001353B2 /* Animals.h */,
+				D632A4C81BCB7A0D001353B2 /* Animals.m */,
 				D632A4C41BCB7378001353B2 /* Monkey.h */,
 				D632A4C51BCB7378001353B2 /* Monkey.m */,
 				D632A4C11BCB736D001353B2 /* ForwardingTarget.h */,
@@ -232,6 +237,7 @@
 				D632A4C61BCB7378001353B2 /* Monkey.m in Sources */,
 				D632A4A41BCB734C001353B2 /* ViewController.m in Sources */,
 				D632A4A11BCB734C001353B2 /* AppDelegate.m in Sources */,
+				D632A4C91BCB7A0D001353B2 /* Animals.m in Sources */,
 				D632A49E1BCB734C001353B2 /* main.m in Sources */,
 				D632A4C31BCB736D001353B2 /* ForwardingTarget.m in Sources */,
 			);
@@ -430,6 +436,7 @@
 				D632A4BD1BCB734C001353B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D632A4BE1BCB734C001353B2 /* Build configuration list for PBXNativeTarget "_objc_msgForward_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				D632A4C01BCB734C001353B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

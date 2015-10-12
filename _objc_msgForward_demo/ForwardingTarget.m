@@ -12,6 +12,17 @@
 
 @implementation ForwardingTarget
 
+- (void)sel
+{
+    NSLog(@"ForwardingTarget");
+}
+
+- (void)invocationTest
+{
+    NSLog(@"invocationTest");
+}
+
+
 id dynamicMethod(id self, SEL _cmd)
 {
     NSLog(@"%s:动态添加的方法",__FUNCTION__);
@@ -38,7 +49,8 @@ id dynamicMethod(id self, SEL _cmd)
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-    [super forwardInvocation:anInvocation];
+    [self performSelector:anInvocation.selector withObject:nil];
+//    [super forwardInvocation:anInvocation];
 }
 
 - (void)doesNotRecognizeSelector:(SEL)aSelector {
